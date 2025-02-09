@@ -5,7 +5,7 @@ from ..config import API_KEY
 API_KEY = API_KEY
 BASE_YRL = "http://api.openweathermap.org/data/2.5/weather?"
 
-def featch_weather(city):
+def fetch_weather(city):
     complete_url = BASE_YRL + "appid=" + API_KEY + "&q=" + city
     
     try:
@@ -14,11 +14,12 @@ def featch_weather(city):
         data = response.json()
         
         return {
-            'city': city,
-            'temperature(in kelvin unit)': data['main']['temp'],
-            'description': data['weather'][0]['description']
+            "city": city,
+            "temperature": data["main"]["temp"],
+            "description": data["weather"][0]["description"]
         }
         
-    except requests.RequestException  as e:
+    except requests.RequestException as e:
         print(f"Error: {e}")
         return None
+    

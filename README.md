@@ -1,4 +1,2 @@
-- Start FastAPI server
-```
-$ fastapi dev TestTask/main.py
-```
+- Task 1 [https://docs.google.com/document/d/1oeTCvmnqF1a8oxZyqodVOvZyp662i429Ac2TI41KUjo/edit?tab=t.0] - figure out how to work with celery to comlete this task
+- Task 2 [https://docs.google.com/document/d/1jpgkUwXKPiNIy7yZ3aQlVkP8oJ57sEUVvVhbw7dDxwI/edit?tab=t.0] - Finished
